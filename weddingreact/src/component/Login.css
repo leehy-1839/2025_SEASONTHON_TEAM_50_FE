@@ -1,0 +1,212 @@
+/* 기본 스타일 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  font-size: 16px;
+  width: 414px;
+  height: 736px;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signup-container {
+  width: 100%;
+  max-width: 420px;
+  background-color: #fff;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100vh;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* 상단 뒤로가기 버튼 */
+.back-button {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.back-button svg {
+  color: #555;
+}
+
+/* 폰트 스타일 */
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 10px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #888;
+  line-height: 1.5;
+}
+
+/* 랜딩 페이지 */
+.main-logo-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.main-image-placeholder {
+  width: 150px;
+  height: 150px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.button-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.kakao-login-button, .guest-login-button, .next-button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.kakao-login-button {
+  background-color: #fee500;
+  color: #191919;
+}
+
+.guest-login-button, .next-button {
+  background-color: #8b5cf6;
+  color: #fff;
+}
+
+.next-button {
+  margin-top: auto;
+  margin-bottom: 24px;
+}
+
+.next-button.disabled {
+  background-color: #e0e0e0;
+  color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+/* 입력 필드 */
+.input-group {
+  margin-bottom: 20px;
+}
+
+input, select {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #8b5cf6;
+}
+
+.input-with-button {
+  display: flex;
+  gap: 8px;
+}
+
+.input-with-button input {
+  flex-grow: 1;
+}
+
+.input-with-button button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #e0e0e0;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+/* 역할 선택 */
+.role-selection {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.role-selection button {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.role-selection button.selected {
+  background-color: #8b5cf6;
+  color: #fff;
+  border-color: #8b5cf6;
+}
+
+.role-description {
+  background-color: #f0f0f0;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}

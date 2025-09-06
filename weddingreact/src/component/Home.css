@@ -1,0 +1,126 @@
+/* Home.css 파일 */
+
+/* 홈 화면 전체 컨테이너 */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* 상단 헤더 */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.header-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.icon-placeholder {
+  width: 24px;
+  height: 24px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+/* D-Day 및 로망 요소 영역 */
+.main-info {
+  margin-bottom: 32px;
+}
+
+.d-day-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.romang-text {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* 메인 콘텐츠 섹션 */
+.content-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+  padding-bottom: 80px; /* 하단 내비게이션 바 공간 확보 */
+}
+
+.content-box {
+  background-color: #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.content-box.romang-board {
+  background-color: #f2f2f2;
+}
+
+.content-box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.content-box p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.box-placeholder {
+  height: 120px;
+  background-color: #d8d8d8;
+  border-radius: 8px;
+}
+
+/* 하단 내비게이션 바 */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+  height: 70px;
+  align-items: center;
+  padding-bottom: env(safe-area-inset-bottom); /* 아이폰 X 시리즈 하단 여백 대응 */
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #a0a0a0;
+  font-size: 0.8rem;
+  gap: 4px;
+}
+
+.nav-item.active {
+  color: #8b5cf6; /* 활성화된 탭 색상 */
+}
+
+.nav-item svg {
+  width: 24px;
+  height: 24px;
+  color: currentColor;
+}
